@@ -4,7 +4,7 @@ import SelectComponent from '../Select/SelectComponent';
 import TextFieldComponent from '../TextField/TextFieldComponent';
 import { Typography } from '@mui/material';
 
-const TodoList = ({ tasks, deleteTask, editTask, toggleTask, handleChange, files, setFiles }) => {
+const TodoList = ({ tasks }) => {
     const [filter, setFilter] = useState('All');
     const [uniqueCategories, setUniqueCategories] = useState([]);
     const [searchText, setSearchText] = useState('');
@@ -18,7 +18,7 @@ const TodoList = ({ tasks, deleteTask, editTask, toggleTask, handleChange, files
     const filteredTasks = tasks.filter(task => {
         return (
             (filter === 'All' || task.category === filter) &&
-            (task.task.toLowerCase().includes(searchText.toLowerCase()))
+            (task?.task && task.task.toLowerCase().includes(searchText?.toLowerCase()))
         );
     });
 
@@ -58,10 +58,6 @@ const TodoList = ({ tasks, deleteTask, editTask, toggleTask, handleChange, files
                             <TodoItem
                                 key={task.id}
                                 taskItem={task}
-                                deleteTask={() => deleteTask(task.id)}
-                                editTask={editTask}
-                                toggleTask={() => toggleTask(task.id)}
-                                handleChange={handleChange}
                             />
                         ))}
                     </tbody>

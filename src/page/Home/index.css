@@ -126,14 +126,9 @@ input::file-selector-button {
   border-radius: 3px;
 }
 
-.input-file-mui>div {
-  width: 90% !important;
-}
-
 .input-file-mui>div>input {
   height: 38px !important;
   padding: 10px 10px !important;
-  width: 90% !important;
 }
 
 .container {
