@@ -1,3 +1,12 @@
+Set-up
+
+1. cloning the project from "https://github.com/xebelge/react-fullstack-todo-app.git"
+2. write "yarn install" to the terminal.
+3. write "yarn start" to the terminal.
+
+and the application will start up.
+
+
 How to Use the App
 
 Log In:
