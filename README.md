@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+How to Use the App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Log In:
+When you open the app, you'll be asked to log in. If you don't have an account, you'll need to sign up.
 
-## Available Scripts
+Adding Todos:
+Once logged in, you can start adding new tasks by tapping the "Add Task" button.
 
-In the project directory, you can run:
+Listing and Filtering Todos:
+Your tasks will be displayed on the main screen. Here, you can sort them by category or whether they've been completed.
 
-### `yarn start`
+Editing and Deleting Todos:
+Each task has options next to it for editing or deleting, making it easy to manage your to-dos.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Database Setup
 
-### `yarn test`
+For using Firebase Realtime Database:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Start by creating a new project in the Firebase Console.
+Head over to the "Realtime Database" section to initiate a database.
+Go to the “Storage” section if you need file uploads.
+Adjust the database and storage rules to fit the needs of your app.
+Incorporate the configuration details found in your Firebase project settings into your .env file.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Operations with Todos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Add:
+While adding a todo, you can specify details like the task name, category, and any associated image or file.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Update:
+To change an existing todo, simply click the "Edit" button next to it.
 
-### `yarn eject`
+Delete:
+Removing a todo is as straightforward as hitting the "Delete" button next to the task you want to remove.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Change Status:
+Mark a todo as complete by checking the box next to the task.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Additional Information
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+User sessions are managed through Firebase Auth.
+Todos and their associated files are stored in Firebase Realtime Database and Firebase Storage.
+Users can only access and manage their todos when they're logged in.
+It's important not to share your .env file over git. Make sure it's listed in your .gitignore.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to fork or clone the project to customize the app as you like. If you run into any issues, don't hesitate to open an issue.
