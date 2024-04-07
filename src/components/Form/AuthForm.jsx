@@ -8,7 +8,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import Alert from '@mui/material/Alert';
-import './auth-form.css';
+import './index.css';
 import TextFieldComponent from '../TextField/TextFieldComponent';
 
 const AuthForm = (props) => {
